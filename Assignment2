@@ -1,0 +1,207 @@
+package suggs_assignment2;
+
+import java.awt.Color;
+
+/**
+ *
+ * Christopher Suggs
+ * 
+ */
+public class Car {
+ 
+    private String make;
+     private String color ;
+     private int speed;
+     private String model;    
+     
+     
+     public Car (String make, String model, String color) {
+    this.speed = 0;
+    this.make = make ;
+    this.model = model ;
+    this.color = color ;
+//    ‘******************************************************
+//‘***  Car
+//‘***  Christopher Suggs
+//‘******************************************************
+//‘*** Wrote class to hold methods for car
+//‘***
+//‘******************************************************
+//‘*** 9/18/17
+//‘******************************************************
+//    
+//    
+}
+     public String getMake(){
+// ‘******************************************************
+//‘***  getMake()
+//‘***  Christopher Suggs
+//‘******Wrote method to get make of car
+//‘*** )
+//‘*** Method nputs:make
+//
+//‘*** Return value: make
+//
+//‘******************************************************
+//‘*** 9/17/17
+//‘******************************************************
+         
+         return make;
+     }
+     
+     public void setMake(String make){
+//          ‘******************************************************
+//‘***  setMAke()
+//‘***  Christopher Suggs
+//‘*****sets make of car
+//‘*** )
+//‘*** Method nputs:this.make
+//
+//‘*** Return value: make
+//
+//‘******************************************************
+//‘*** 9/17/17
+//‘******************************************************
+         
+         this.make = make;
+     }
+     public String getModel() {
+         return model;
+         
+         //          ‘******************************************************
+//‘***  getModel()
+//‘***  Christopher Suggs
+//‘*******gets model of the car
+//‘*** )
+//‘*** Method nputs:model
+//
+//‘*** Return value: model
+//
+//‘******************************************************
+//‘*** 9/17/17
+//‘******************************************************
+         
+     }
+     
+     public void setModel(String model) {
+         this.model = model ;
+         
+         //          ‘******************************************************
+//‘***  setModel()
+//‘***  Christopher Suggs
+//‘*************sets model of car
+//‘*** )
+//‘*** Method nputs:this.model
+//
+//‘*** Return value: model
+//
+//‘******************************************************
+//‘*** 9/17/17
+//‘******************************************************
+         
+         
+     }
+     
+     public String getColor(){
+         return color;
+        
+         //          ‘******************************************************
+//‘***  getColor()
+//‘***  Christopher Suggs
+//‘*********gets color of car
+//‘*** )
+//‘*** Method nputs:color
+//
+//‘*** Return value: color
+//
+//‘******************************************************
+//‘*** 9/17/17
+//‘******************************************************
+         
+     }
+     public void setColor(String color){
+         this.color = color ;
+         
+         //          ‘******************************************************
+//‘***  setColor()
+//‘***  Christopher Suggs
+//‘********sets color of car
+//‘*** )
+//‘*** Method nputs:this.color
+//
+//‘*** Return value: color
+//
+//‘******************************************************
+//‘*** 9/17/17
+//‘******************************************************
+         
+         
+     }
+     public int getSpeed() {
+         return speed;
+         
+         //          ‘******************************************************
+//‘***  getSpeed()
+//‘***  Christopher Suggs
+//‘*************gets speed of car
+//‘*** )
+//‘*** Method nputs:speed
+//
+//‘*** Return value: speed
+//
+//‘******************************************************
+//‘*** 9/17/17
+//‘******************************************************
+         
+     }
+     
+     public void accelerate() {
+        speed += 5 ;
+        
+        //          ‘******************************************************
+//‘***  accelerate()
+//‘***  Christopher Suggs
+//‘********increases speed of car
+//‘*** )
+//‘*** Method nputs:speed
+//
+//‘*** Return value: speed + 5
+//
+//‘******************************************************
+//‘*** 9/17/17
+//‘******************************************************
+         
+     }
+     
+     public void deccelerate() {
+        if (speed>5)
+        {
+            speed-=5 ;
+        }
+        if (speed<5 && speed>0) {
+            speed = 0 ;
+        }
+        if (speed==0) {
+            speed = 0; //keeps speed from going below 0
+            
+            //          ‘******************************************************
+//‘***  deccelerate()
+//‘***  Christopher Suggs
+//‘*********decreases speed of car; car speed cant drop below 0
+//‘*** )
+//‘*** Method nputs:speed
+//
+//‘*** Return value: speed - 5
+//
+//‘******************************************************
+//‘*** 9/17/17
+//‘******************************************************
+         
+        }
+        
+        
+        
+        
+     }
+}
+
